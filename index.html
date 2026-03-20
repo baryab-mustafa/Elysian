@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>ÉLYSIAN | Luxury Pet Accessories & Care</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="images/Logo.jpg" alt="ÉLYSIAN" class="logo-img" onerror="this.style.display='none'">
+        <div class="logo-text">
+          <h1>ÉLYSIAN</h1>
+          <span class="logo-accent">PET COUTURE</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#" data-section="home" class="active">Home</a>
+        <a href="#" data-section="shop">Shop</a>
+        <a href="#" data-section="about">About</a>
+        <a href="#" data-section="contact">Contact</a>
+      </div>
+      <div class="nav-icons">
+        <i class="fas fa-search" id="searchIcon"></i>
+        <div class="cart-icon-wrapper">
+          <i class="fas fa-shopping-cart" id="cartIcon"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </div>
+        <i class="fas fa-bars mobile-menu" id="mobileMenu"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner Section -->
+  <section id="home-section" class="hero">
+    <div class="hero-banner" style="background-image: url('images/Banner.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="hero-subtitle">EST. 2024</span>
+          <h1>Where Elegance<br>Meets Devotion</h1>
+          <p>Discover the finest collection of luxury pet accessories and care products, crafted for the discerning pet parent.</p>
+          <a href="#" class="btn-gold" data-section="shop">Explore Collection →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <h3>500+</h3>
+            <p>Happy Pets</p>
+          </div>
+          <div class="stat">
+            <h3>100%</h3>
+            <p>Natural Materials</p>
+          </div>
+          <div class="stat">
+            <h3>24/7</h3>
+            <p>Vet Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Banner -->
+  <!-- <div class="featured-banner">
+    <div class="featured-content">
+      <span class="featured-tag">Limited Edition</span>
+      <h3>Holiday Collection 2024</h3>
+      <p>Shop our exclusive holiday gift sets</p>
+      <a href="#" class="btn-outline" data-section="shop">Shop Now →</a>
+    </div>
+  </div> -->
+
+  <!-- Shop Section -->
+  <section id="shop-section" class="shop-section hidden">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Collection</span>
+        <h2>Luxury Essentials</h2>
+        <p>Curated pieces that combine timeless elegance with uncompromising quality</p>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about-section" class="about-section hidden">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600" alt="Luxury pet accessories">
+          <div class="about-badge">
+            <i class="fas fa-award"></i>
+            <span>Premium Quality</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">Our Story</span>
+          <h2>Crafted With Love For Your Companion</h2>
+          <p>ÉLYSIAN was born from a passion to create the perfect blend of luxury and functionality for pets. Every piece is thoughtfully designed using premium materials, ensuring comfort, durability, and undeniable style.</p>
+          <p>We believe that our pets deserve nothing but the finest. That's why we partner with ethical manufacturers and use only vet-approved, eco-friendly materials.</p>
+          <div class="features-list">
+            <div class="feature">
+              <i class="fas fa-gem"></i>
+              <span>Premium Materials</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-leaf"></i>
+              <span>Eco-Friendly</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-heart"></i>
+              <span>Vet Approved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-section" class="contact-section hidden">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag">Get In Touch</span>
+          <h2>We'd Love To Hear From You</h2>
+          <p>Have questions about our products or need personalized recommendations? Our concierge team is here to help.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Visit Us</h4>
+                <p>123 Luxury Avenue, Beverly Hills, CA 90210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Call Us</h4>
+                <p>+1 (888) 452-ELYS</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email Us</h4>
+                <p>concierge@elysianpets.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="text" placeholder="Pet's Name">
+          <textarea rows="5" placeholder="How can we help you?"></textarea>
+          <button type="submit" class="btn-gold">Send Message <i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+      <button class="close-cart" id="closeCartBtn">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn-gold checkout-btn" id="checkoutBtn">Checkout →</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/logo-white.png" alt="ÉLYSIAN" class="footer-logo-img" onerror="this.style.display='none'">
+        <h2>ÉLYSIAN</h2>
+        <p>Luxury pet essentials for the discerning pet parent.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="#" data-section="shop">All Products</a>
+        <a href="#">Accessories</a>
+        <a href="#">Care Products</a>
+        <a href="#">Gift Sets</a>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <a href="#" data-section="about">About Us</a>
+        <a href="#" data-section="contact">Contact</a>
+        <a href="#">Shipping Info</a>
+        <a href="#">Returns</a>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Join The Circle</h4>
+        <p>Get 10% off your first order</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email">
+          <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 ÉLYSIAN. All rights reserved. Where elegance meets devotion.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
